@@ -42,7 +42,7 @@ describe('simpleCalculator tests', () => {
       a: '5',
       b: '3',
       action: Action.Add,
-    } as any);
+    });
     expect(result).toBeNull();
   });
 });
