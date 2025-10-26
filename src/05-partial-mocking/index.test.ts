@@ -6,8 +6,8 @@ jest.mock('./index', () => {
     jest.requireActual<typeof import('./index')>('./index');
 
   return {
-    ...originalModule, // Spread all original module's exports
-    mockOne: jest.fn(), // Override specific functions to be mocks
+    ...originalModule,
+    mockOne: jest.fn(),
     mockTwo: jest.fn(),
     mockThree: jest.fn(),
   };

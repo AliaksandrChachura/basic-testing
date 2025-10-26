@@ -27,12 +27,10 @@ describe('generateLinkedList', () => {
       },
     },
   };
-  // Check match by expect(...).toStrictEqual(...)
   test('should generate linked list from values 1', () => {
     expect(generateLinkedList(values1)).toStrictEqual(expected);
   });
 
-  // Check match by comparison with snapshot
   test('should generate linked list from values 2', () => {
     expect(generateLinkedList(values2)).toMatchSnapshot();
   });
